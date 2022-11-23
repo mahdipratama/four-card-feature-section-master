@@ -1,4 +1,4 @@
-@use '../utilities' as u;
+@use '../utilities' as *;
 
 h1,
 h2,
@@ -6,10 +6,15 @@ h3 {
   font-weight: 700;
   line-height: 1.1;
   margin-top: 0;
+  margin-bottom: rem(15);
+  color: var(--heading-color);
 }
 
 p {
   margin-top: 0;
+  font-size: rem(15);
+  line-height: 1.7;
+  color: var(--text-color);
 }
 
 a,
@@ -17,4 +22,8 @@ a:visited,
 a:active {
   text-decoration: none;
   color: #fff;
+}
+
+span {
+  margin-top: 0;
 }

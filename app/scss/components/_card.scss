@@ -1,0 +1,33 @@
+@use '../utilities' as *;
+
+.card {
+  position: relative;
+  padding: rem(25);
+  border-radius: 8px;
+  overflow: hidden;
+  max-width: rem(350);
+  min-height: rem(220);
+  box-shadow: rgb(0 0 0 / 20%) 0px 8px 18px -3px;
+
+  & img {
+    position: absolute;
+    bottom: rem(24);
+    right: rem(24);
+  }
+
+  &__supervisor {
+    border-top: solid 5px var(--cyan);
+  }
+
+  &__builder {
+    border-top: solid 5px var(--red);
+  }
+
+  &__karma {
+    border-top: solid 5px var(--orange);
+  }
+
+  &__calculator {
+    border-top: solid 5px var(--blue);
+  }
+}

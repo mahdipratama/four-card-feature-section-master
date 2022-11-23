@@ -1,0 +1,19 @@
+@use '../utilities' as *;
+
+header {
+  text-align: center;
+  max-width: rem(300);
+  margin-bottom: rem(75);
+  h1 {
+    font-size: rem(20);
+    font-weight: 300;
+  }
+
+  span {
+    display: block;
+    font-size: rem(20);
+    font-weight: 700;
+    color: var(--heading-color);
+    margin-bottom: rem(25);
+  }
+}
