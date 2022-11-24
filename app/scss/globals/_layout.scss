@@ -18,10 +18,33 @@ body {
   place-items: center;
   padding: 0 rem(20);
   margin: rem(80) 0;
+
+  @include breakpoint-up(large) {
+    display: grid;
+    grid-template-rows: max-content;
+    justify-items: center;
+    align-items: center;
+    margin: rem(88) 0;
+
+    & main {
+      align-self: start;
+    }
+  }
 }
 
 .container {
   display: grid;
   grid-template-columns: 1fr;
   gap: rem(22);
+
+  @include breakpoint-up(medium) {
+    grid-template-columns: repeat(2, 1fr);
+    column-gap: rem(21);
+    row-gap: rem(28);
+  }
+
+  @include breakpoint-up(large) {
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(4, 1fr);
+  }
 }
